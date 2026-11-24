@@ -173,7 +173,7 @@ const AppShell = memo(function AppShell() {
               <span>
                 Powered by{' '}
                 <span className="font-semibold text-slate-700 dark:text-slate-300">
-                  {BRANDING.productName}
+                  BreatheWay
                 </span>{' '}
                 Community Engine
               </span>

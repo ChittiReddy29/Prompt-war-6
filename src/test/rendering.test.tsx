@@ -16,15 +16,13 @@ import { IAQCenter } from '@/components/IAQ/IAQCenter';
 import { CommunityHub } from '@/components/Community/CommunityHub';
 import { Sparkline } from '@/components/shared/Sparkline';
 
-import { BRANDING } from '@/config/branding';
-
 describe('App Root Layout Rendering', () => {
   it('renders App shell with header, main landmark, and footer', () => {
     render(<App />);
     expect(screen.getByRole('banner', { name: /application header/i })).toBeInTheDocument();
     expect(screen.getByRole('tabpanel')).toBeInTheDocument();
     expect(screen.getByRole('contentinfo', { name: /application footer/i })).toBeInTheDocument();
-    expect(screen.getAllByText(BRANDING.productName).length).toBeGreaterThan(0);
+    expect(screen.getAllByText('BreatheWay').length).toBeGreaterThan(0);
     expect(screen.getByText('LIVE')).toBeInTheDocument();
   });
 });

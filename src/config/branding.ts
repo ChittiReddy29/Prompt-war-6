@@ -1,23 +1,23 @@
 // ============================================================
 // src/config/branding.ts
-// Centralized Rebranded Configuration: AeroShield
-// Clean air defense, safe urban transit, and atmospheric intelligence.
+// Centralized Rebranded Configuration: BreatheWay
+// Warm & community-friendly, emphasizing safe passage through polluted cities.
 // ============================================================
 
 export const BRANDING = {
-  productName: 'AeroShield',
-  productNameShort: 'AeroShield',
-  suiteName: 'AeroShield Safe Passage & Clean Air Platform',
-  tagline: 'Safe passage through polluted cities • Hyperlocal clean air intelligence',
-  companyName: 'AeroShield Technologies Inc.',
+  productName: 'BreatheWay',
+  productNameShort: 'BreatheWay',
+  suiteName: 'BreatheWay Safe Passage & Clean Air Platform',
+  tagline: 'Safe passage through polluted cities • Warm community clean air intelligence',
+  companyName: 'BreatheWay Community Technologies Inc.',
   version: '3.0.0 Community Edition',
   buildTag: '2026.11-COMMUNITY',
-  supportEmail: 'support@aeroshield.org',
+  supportEmail: 'support@breatheway.org',
   portalName: 'Community Safe Passage & Clean Air Portal',
 
   // Core Engine
-  engineName: 'AeroShield Core',
-  engineBadge: 'Powered by AeroShield Community Engine',
+  engineName: 'BreatheWay Core',
+  engineBadge: 'Powered by BreatheWay Community Engine',
 
   // Compliance & Standards badges
   standards: [

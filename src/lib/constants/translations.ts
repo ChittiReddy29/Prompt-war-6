@@ -6,7 +6,7 @@
 
 export const TRANSLATIONS: Record<string, Record<string, string>> = {
   en: {
-    appTitle: 'AeroShield',
+    appTitle: 'BreatheWay',
     appSubtitle: 'Warm community-driven safe passage through polluted cities',
     tabDashboard: 'Air Telemetry',
     tabRoutine: 'Routine Optimizer',
@@ -29,7 +29,7 @@ export const TRANSLATIONS: Record<string, Record<string, string>> = {
     pledged: 'Pledged Active',
   },
   hi: {
-    appTitle: 'एरोशील्ड (AeroShield)',
+    appTitle: 'ब्रीदवे (BreatheWay)',
     appSubtitle: 'प्रदूषित शहरों में सुरक्षित आवागमन और सामुदायिक स्वच्छ वायु पहल',
     tabDashboard: 'वायु टेलीमेट्री',
     tabRoutine: 'दैनिक रूटीन अनुकूलक',
@@ -52,7 +52,7 @@ export const TRANSLATIONS: Record<string, Record<string, string>> = {
     pledged: 'सक्रिय प्रतिज्ञा',
   },
   ar: {
-    appTitle: 'إيروشيلد (AeroShield)',
+    appTitle: 'بريذواي (BreatheWay)',
     appSubtitle: 'الممر الآمن ومبادرة الهواء النقي المجتمعية في المدن الملوثة',
     tabDashboard: 'بيانات الهواء',
     tabRoutine: 'جدول الروتين اليومي',

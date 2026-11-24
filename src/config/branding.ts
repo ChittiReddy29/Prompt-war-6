@@ -1,44 +1,50 @@
 // ============================================================
 // src/config/branding.ts
-// Centralized Rebranded Configuration: BreatheWay
-// Warm & community-friendly, emphasizing safe passage through polluted cities.
+// Centralized Design System & Brand Identity: AeroPulse
+// Enterprise Atmospheric Telemetry & Resilient Clean Passage
 // ============================================================
 
 export const BRANDING = {
-  productName: 'BreatheWay',
-  productNameShort: 'BreatheWay',
-  suiteName: 'BreatheWay Safe Passage & Clean Air Platform',
-  tagline: 'Safe passage through polluted cities • Warm community clean air intelligence',
-  companyName: 'BreatheWay Community Technologies Inc.',
-  version: '3.0.0 Community Edition',
-  buildTag: '2026.11-COMMUNITY',
-  supportEmail: 'support@breatheway.org',
-  portalName: 'Community Safe Passage & Clean Air Portal',
+  productName: 'AeroPulse',
+  productNameShort: 'AeroPulse',
+  suiteName: 'AeroPulse Atmospheric Intelligence & Clean Corridor System',
+  tagline: 'Precision Urban Atmospheric Telemetry • AI Exposure Mitigation & Low-Emission Transit',
+  companyName: 'AeroPulse Systems Inc.',
+  version: '4.2 Enterprise Edition',
+  buildTag: '2026.11-STABLE',
+  supportEmail: 'ops@aeropulse.io',
+  portalName: 'AeroPulse Atmospheric Control Center',
 
   // Core Engine
-  engineName: 'BreatheWay Core',
-  engineBadge: 'Powered by BreatheWay Community Engine',
+  engineName: 'AeroPulse Neural Core',
+  engineBadge: 'Powered by AeroPulse Neural Core',
 
   // Compliance & Standards badges
   standards: [
-    { label: 'WCAG 2.2 AA', tooltip: 'Full accessibility & twin representation' },
-    { label: 'EPA Standardized', tooltip: 'Calibrated air quality sub-indexes' },
-    { label: 'Community Powered', tooltip: 'Hyperlocal clean route sharing & neighborhood pledges' },
-    { label: 'Gemini 3.1 AI', tooltip: 'Server-side neural routine optimization' },
+    { label: 'WCAG 2.2 AA', tooltip: 'Certified visual contrast & accessibility twin representations' },
+    { label: 'EPA Standardized', tooltip: 'Calibrated atmospheric sub-index breakpoints' },
+    { label: 'Dijkstra Routing', tooltip: 'Graph-computed minimum inhalation exposure corridors' },
+    { label: 'Gemini 3.1 Neural', tooltip: 'Zero-trust server-side exposure scheduling' },
   ],
 
-  // Theme primary palettes - Warm, community-friendly & accessible
+  // Theme primary palettes - Crisp, authoritative & enterprise-grade
   colors: {
-    primary: '#059669', // Emerald clean air
-    primaryHover: '#047857',
-    secondary: '#d97706', // Warm amber / community warmth
-    accent: '#0d9488', // Teal safe passage
-    backgroundLight: '#fafaf9', // Warm stone/paper canvas
-    backgroundDark: '#0c0f14',
+    primary: '#4f46e5', // Deep Indigo / Cobalt
+    primaryHover: '#4338ca',
+    primaryActive: '#3730a3',
+    primarySubtle: '#eef2ff',
+    secondary: '#0ea5e9', // Precision Sky
+    accent: '#10b981', // Clean Emerald
+    backgroundLight: '#f8fafc', // Crisp clean slate
+    backgroundDark: '#090d16', // Deep Void Obsidian
     surfaceLight: '#ffffff',
-    surfaceDark: '#141a24',
-    textPrimaryLight: '#1c1917',
+    surfaceDark: '#0f172a',
+    borderLight: '#e2e8f0',
+    borderDark: 'rgba(255, 255, 255, 0.08)',
+    textPrimaryLight: '#0f172a',
     textPrimaryDark: '#f8fafc',
+    textMutedLight: '#64748b',
+    textMutedDark: '#94a3b8',
     success: '#10b981',
     warning: '#f59e0b',
     error: '#ef4444',

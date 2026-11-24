@@ -78,7 +78,7 @@ export const AirTelemetryDashboard = memo(function AirTelemetryDashboard() {
             <span className="text-slate-400 dark:text-slate-600 hidden sm:inline">•</span>
 
             <div className="flex items-center gap-1.5 font-bold text-slate-800 dark:text-slate-200 bg-white/60 dark:bg-slate-800/60 px-3 py-1 rounded-full border border-slate-200/60 dark:border-slate-700/60">
-              <TelemetryIcon size={14} className="text-cyan-600 dark:text-cyan-400" />
+              <TelemetryIcon size={14} className="text-indigo-600 dark:text-indigo-400" />
               <span>{currentZone.zoneName}</span>
             </div>
 

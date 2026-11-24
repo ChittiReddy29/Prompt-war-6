@@ -73,7 +73,7 @@ export function Modal({
         ref={dialogRef}
         className={`relative w-full ${maxWidthStyles[maxWidth]} bg-white dark:bg-[#0f172a] text-slate-900 dark:text-slate-100 rounded-2xl p-6 shadow-elevated border border-slate-200/90 dark:border-slate-800 z-10 animate-in zoom-in-95 duration-150`}
       >
-        <div className="flex items-start justify-between gap-4 mb-4">
+        <div className="flex items-start justify-between gap-4 mb-4 pb-3 border-b border-slate-100 dark:border-slate-800/80">
           <div>
             <h2 id="modal-title" className="text-lg font-bold text-slate-900 dark:text-white tracking-tight">
               {title}
@@ -88,7 +88,7 @@ export function Modal({
             type="button"
             onClick={onClose}
             aria-label="Close dialog"
-            className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer"
+            className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer"
           >
             <CloseIcon size={16} />
           </button>

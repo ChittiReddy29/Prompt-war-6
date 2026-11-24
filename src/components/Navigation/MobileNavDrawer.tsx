@@ -6,7 +6,7 @@
 import { memo } from 'react';
 import { TabId, Language, AccessibilityMode, type UrbanZone } from '@/types';
 import { BRANDING } from '@/config/branding';
-import { ShieldLogo, CloseIcon, UserIcon } from '@/components/ui/Icons';
+import { AeroPulseLogo, CloseIcon, UserIcon } from '@/components/ui/Icons';
 
 export interface MobileNavDrawerProps {
   isOpen: boolean;
@@ -55,12 +55,12 @@ export const MobileNavDrawer = memo(function MobileNavDrawer({
       />
 
       {/* Drawer Container */}
-      <div className="relative w-4/5 max-w-sm bg-white dark:bg-[#070b16] h-full shadow-2xl flex flex-col justify-between border-r border-slate-200 dark:border-slate-800 p-5 z-10 overflow-y-auto animate-fadeIn">
+      <div className="relative w-4/5 max-w-sm bg-white dark:bg-[#090d16] h-full shadow-2xl flex flex-col justify-between border-r border-slate-200 dark:border-slate-800 p-5 z-10 overflow-y-auto animate-fadeIn">
         <div className="flex flex-col gap-4">
           <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-cyan-600 to-teal-400 text-white flex items-center justify-center shadow-xs">
-                <ShieldLogo size={18} />
+              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 to-sky-400 text-white flex items-center justify-center shadow-xs">
+                <AeroPulseLogo size={18} />
               </div>
               <span className="font-extrabold text-base text-slate-900 dark:text-white">
                 {BRANDING.productName}
@@ -80,7 +80,7 @@ export const MobileNavDrawer = memo(function MobileNavDrawer({
           {/* Mobile Active Sector Widget */}
           <div className="p-3 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs">
             <div className="flex justify-between items-center mb-1">
-              <span className="text-[10px] uppercase font-bold text-slate-600 dark:text-slate-400 font-mono">Current Sector</span>
+              <span className="text-[10px] uppercase font-bold text-slate-500 dark:text-slate-400 font-mono">Current Sector</span>
               <span className="font-mono font-bold" style={{ color: aqiColor }}>
                 AQI {selectedZone.aqi}
               </span>
@@ -90,7 +90,7 @@ export const MobileNavDrawer = memo(function MobileNavDrawer({
 
           {/* Mobile Nav Tabs */}
           <div className="flex flex-col gap-1.5">
-            <div className="text-[10px] font-black uppercase tracking-wider text-slate-600 dark:text-slate-400 font-mono px-1">
+            <div className="text-[10px] font-black uppercase tracking-wider text-slate-500 dark:text-slate-400 font-mono px-1">
               Navigation
             </div>
             {tabs.map((tab) => {
@@ -103,11 +103,11 @@ export const MobileNavDrawer = memo(function MobileNavDrawer({
                   onClick={() => onSelectTab(tab.id)}
                   className={`flex items-center gap-3 w-full px-3.5 py-3 min-h-[48px] rounded-xl text-xs font-bold transition-all ${
                     isActive
-                      ? 'bg-cyan-50 dark:bg-cyan-950/60 text-cyan-900 dark:text-cyan-100 border border-cyan-300 dark:border-cyan-800'
+                      ? 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-900 dark:text-indigo-100 border border-indigo-300 dark:border-indigo-800'
                       : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60'
                   }`}
                 >
-                  <span className={isActive ? 'text-cyan-600 dark:text-cyan-400' : 'text-slate-500 dark:text-slate-400'}>
+                  <span className={isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500 dark:text-slate-400'}>
                     {tab.icon}
                   </span>
                   <span>{tab.label}</span>
@@ -125,7 +125,7 @@ export const MobileNavDrawer = memo(function MobileNavDrawer({
               onClose();
               onOpenAuth();
             }}
-            className="w-full py-3 min-h-[44px] rounded-xl font-bold text-xs bg-slate-900 text-white dark:bg-white dark:text-slate-900 flex items-center justify-center gap-2 shadow-xs cursor-pointer active:scale-98"
+            className="w-full py-3 min-h-[44px] rounded-xl font-bold text-xs bg-indigo-600 text-white dark:bg-indigo-500 flex items-center justify-center gap-2 shadow-xs cursor-pointer active:scale-98"
           >
             <UserIcon size={14} />
             <span>{currentUser ? currentUser.name : 'Open Citizen Portal'}</span>

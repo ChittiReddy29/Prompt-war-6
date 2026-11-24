@@ -28,8 +28,8 @@ export const ZoneCard = memo(function ZoneCard({
       aria-label={`${zone.zoneName} air quality status`}
       className={`rounded-2xl border p-4 sm:p-5 flex flex-col justify-between gap-4 transition-all duration-200 relative overflow-hidden group cursor-pointer ${
         isSelected
-          ? 'bg-gradient-to-b from-cyan-50/90 to-white dark:from-cyan-950/40 dark:to-slate-900 border-cyan-500 dark:border-cyan-400 shadow-md ring-1 ring-cyan-500/40'
-          : 'bg-white/90 dark:bg-[#0c1220]/90 border-slate-200/90 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50/80 dark:hover:bg-[#10182b] shadow-xs hover:-translate-y-1 hover:shadow-md'
+          ? 'bg-indigo-50/70 dark:bg-indigo-950/30 border-indigo-500 dark:border-indigo-400 shadow-md ring-1 ring-indigo-500/30'
+          : 'bg-white/90 dark:bg-[#0f172a]/90 border-slate-200/90 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50/80 dark:hover:bg-[#151f34] shadow-xs hover:-translate-y-1 hover:shadow-md'
       }`}
       onClick={() => onSelect(zone.zoneId)}
     >
@@ -42,7 +42,7 @@ export const ZoneCard = memo(function ZoneCard({
 
       <div className="flex items-start justify-between gap-2 pt-1">
         <div>
-          <h3 className="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base tracking-tight leading-snug group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+          <h3 className="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base tracking-tight leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
             {zone.zoneName}
           </h3>
           <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">

@@ -6,8 +6,8 @@
 
 export const TRANSLATIONS: Record<string, Record<string, string>> = {
   en: {
-    appTitle: 'BreatheWay',
-    appSubtitle: 'Warm community-driven safe passage through polluted cities',
+    appTitle: 'AeroPulse',
+    appSubtitle: 'Precision urban atmospheric telemetry & AI low-emission transit',
     tabDashboard: 'Air Telemetry',
     tabRoutine: 'Routine Optimizer',
     tabTransit: 'Low-Emission Transit',
@@ -29,8 +29,8 @@ export const TRANSLATIONS: Record<string, Record<string, string>> = {
     pledged: 'Pledged Active',
   },
   hi: {
-    appTitle: 'ब्रीदवे (BreatheWay)',
-    appSubtitle: 'प्रदूषित शहरों में सुरक्षित आवागमन और सामुदायिक स्वच्छ वायु पहल',
+    appTitle: 'एरोपल्स (AeroPulse)',
+    appSubtitle: 'अति-सटीक शहरी वायुमंडलीय टेलीमेट्री और कम-उत्सर्जन स्मार्ट ट्रांजिट',
     tabDashboard: 'वायु टेलीमेट्री',
     tabRoutine: 'दैनिक रूटीन अनुकूलक',
     tabTransit: 'कम-उत्सर्जन आवागमन',
@@ -52,8 +52,8 @@ export const TRANSLATIONS: Record<string, Record<string, string>> = {
     pledged: 'सक्रिय प्रतिज्ञा',
   },
   ar: {
-    appTitle: 'بريذواي (BreatheWay)',
-    appSubtitle: 'الممر الآمن ومبادرة الهواء النقي المجتمعية في المدن الملوثة',
+    appTitle: 'إيروبلس (AeroPulse)',
+    appSubtitle: 'رصد الغلاف الجوي الحضري المتقدم وتخطيط التنقل منخفض الانبعاثات بالذكاء الاصطناعي',
     tabDashboard: 'بيانات الهواء',
     tabRoutine: 'جدول الروتين اليومي',
     tabTransit: 'التنقل منخفض الانبعاثات',

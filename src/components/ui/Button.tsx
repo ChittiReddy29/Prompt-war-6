@@ -1,7 +1,7 @@
 // ============================================================
 // src/components/ui/Button.tsx
-// Precision Design-System Button Component (Linear/Stripe Craftsmanship)
-// Full Dual Theme Support (Light & Dark) & WCAG 2.2 AA Focus Indicators
+// AeroPulse Design-System Button Component (Linear/Stripe Craftsmanship)
+// Dual Theme Support (Light & Dark) & WCAG 2.2 AA Focus Indicators
 // ============================================================
 
 import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from 'react';
@@ -33,7 +33,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
   ref
 ) {
   const baseStyles =
-    'relative inline-flex items-center justify-center font-semibold tracking-tight rounded-xl transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-900 disabled:opacity-50 disabled:cursor-not-allowed select-none active:scale-[0.98] cursor-pointer';
+    'relative inline-flex items-center justify-center font-bold tracking-tight rounded-xl transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-900 disabled:opacity-50 disabled:cursor-not-allowed select-none active:scale-[0.98] cursor-pointer';
 
   const sizeStyles: Record<ButtonSize, string> = {
     xs: 'px-2.5 py-1 text-xs gap-1.5',
@@ -44,7 +44,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
 
   const variantStyles: Record<ButtonVariant, string> = {
     primary:
-      'bg-emerald-600 hover:bg-emerald-700 text-white border border-emerald-700/20 shadow-xs dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:text-slate-950 dark:border-emerald-400/40',
+      'bg-indigo-600 hover:bg-indigo-700 text-white border border-indigo-700/20 shadow-xs dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:text-white dark:border-indigo-400/40',
     secondary:
       'bg-white hover:bg-slate-50 text-slate-800 border border-slate-200/90 shadow-xs dark:bg-slate-800/90 dark:hover:bg-slate-700 dark:text-slate-100 dark:border-slate-700/80',
     outline:
@@ -54,7 +54,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
     danger:
       'bg-rose-600 hover:bg-rose-700 text-white border border-rose-700/20 shadow-xs dark:bg-rose-600 dark:hover:bg-rose-500 dark:text-white dark:border-rose-500/30',
     ai:
-      'bg-slate-900 hover:bg-slate-800 text-emerald-400 border border-emerald-500/40 shadow-xs dark:bg-slate-900/90 dark:hover:bg-slate-800 dark:text-emerald-300 dark:border-emerald-500/40',
+      'bg-slate-900 hover:bg-slate-800 text-indigo-300 border border-indigo-500/40 shadow-xs dark:bg-slate-900/90 dark:hover:bg-slate-800 dark:text-indigo-300 dark:border-indigo-500/40',
   };
 
   return (

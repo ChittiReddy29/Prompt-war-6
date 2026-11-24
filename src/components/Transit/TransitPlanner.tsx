@@ -71,7 +71,7 @@ export const TransitPlanner = memo(function TransitPlanner() {
                 id="origin-select"
                 value={originId}
                 onChange={(e) => setOrigin(e.target.value)}
-                className="w-full bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-700 rounded-xl px-4 py-3.5 text-sm font-semibold text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent cursor-pointer shadow-xs pr-10 appearance-none hover:border-slate-300 dark:hover:border-slate-600 transition-colors"
+                className="w-full bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-700 rounded-xl px-4 py-3.5 text-sm font-semibold text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent cursor-pointer shadow-xs pr-10 appearance-none hover:border-slate-300 dark:hover:border-slate-600 transition-colors"
               >
                 {nodes.map((node) => (
                   <option
@@ -103,7 +103,7 @@ export const TransitPlanner = memo(function TransitPlanner() {
                 id="destination-select"
                 value={destinationId}
                 onChange={(e) => setDestination(e.target.value)}
-                className="w-full bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-700 rounded-xl px-4 py-3.5 text-sm font-semibold text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent cursor-pointer shadow-xs pr-10 appearance-none hover:border-slate-300 dark:hover:border-slate-600 transition-colors"
+                className="w-full bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-700 rounded-xl px-4 py-3.5 text-sm font-semibold text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent cursor-pointer shadow-xs pr-10 appearance-none hover:border-slate-300 dark:hover:border-slate-600 transition-colors"
               >
                 {nodes.map((node) => (
                   <option

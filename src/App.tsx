@@ -12,7 +12,7 @@ import { Header } from '@/components/Navigation/Header';
 import { AlertBanner } from '@/components/shared/AlertBanner';
 import { AirTelemetryDashboard } from '@/components/Dashboard/AirTelemetryDashboard';
 import { BRANDING } from '@/config/branding';
-import { ShieldLogo } from '@/components/ui/Icons';
+import { AeroPulseLogo } from '@/components/ui/Icons';
 
 // Lazy-loaded command viewports for code splitting & minimal initial bundle
 const DailyRoutineOptimizer = lazy(() =>
@@ -94,7 +94,7 @@ const AppShell = memo(function AppShell() {
       {/* 2. Main Content Canvas Area (With desktop left margin to clear fixed sidebar) */}
       <div className="flex-1 lg:pl-72 flex flex-col min-h-screen min-w-0 relative z-10 transition-all duration-200">
         {/* Top Workspace Utility Bar with Single Document H1 */}
-        <div className="flex items-center justify-between px-4 sm:px-6 xl:px-8 py-3.5 border-b border-slate-200/80 dark:border-slate-800/80 bg-white/60 dark:bg-[#070b16]/70 backdrop-blur-xl sticky top-0 z-30">
+        <div className="flex items-center justify-between px-4 sm:px-6 xl:px-8 py-3.5 border-b border-slate-200/80 dark:border-slate-800/80 bg-white/70 dark:bg-[#090d16]/80 backdrop-blur-xl sticky top-0 z-30">
           <div className="flex items-center gap-3">
             <span className="text-xs font-mono font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
               WORKSPACE
@@ -105,20 +105,20 @@ const AppShell = memo(function AppShell() {
             </h1>
             <span className="text-slate-300 dark:text-slate-700">•</span>
             <span className="text-xs text-slate-600 dark:text-slate-400">
-              Station: <strong className="text-slate-800 dark:text-slate-200">{selectedZone.zoneName}</strong>
+              Station: <strong className="text-slate-900 dark:text-slate-100">{selectedZone.zoneName}</strong>
             </span>
           </div>
 
           <div className="flex items-center gap-3 text-xs">
-            <span className="flex items-center gap-1.5 font-semibold text-cyan-700 dark:text-cyan-400 px-3 py-1 rounded-full bg-cyan-50 dark:bg-cyan-950/60 border border-cyan-200/60 dark:border-cyan-800/60 shadow-2xs">
+            <span className="flex items-center gap-1.5 font-semibold text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200/60 dark:border-indigo-800/60 shadow-2xs">
               <span className="relative flex h-2 w-2" aria-hidden="true">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
               </span>
               Gemini 3.1 Neural Core
             </span>
             <span className="text-slate-300 dark:text-slate-700 hidden xl:inline">•</span>
-            <span className="text-slate-600 dark:text-slate-400 font-mono text-[11px] hidden xl:inline">
+            <span className="text-slate-500 dark:text-slate-400 font-mono text-[11px] hidden xl:inline">
               Zero-Trust Architecture
             </span>
           </div>
@@ -154,13 +154,13 @@ const AppShell = memo(function AppShell() {
         <footer
           role="contentinfo"
           aria-label="Application footer"
-          className="border-t border-slate-200/80 dark:border-slate-800/80 bg-white/70 dark:bg-[#070b14]/85 backdrop-blur-xl py-8 px-4 sm:px-6 lg:px-8 text-xs text-slate-500 dark:text-slate-400 mt-16 transition-colors relative z-10"
+          className="border-t border-slate-200/80 dark:border-slate-800/80 bg-white/70 dark:bg-[#090d16]/85 backdrop-blur-xl py-8 px-4 sm:px-6 lg:px-8 text-xs text-slate-500 dark:text-slate-400 mt-16 transition-colors relative z-10"
         >
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
               <div className="flex items-center gap-2.5">
-                <div className="w-6 h-6 rounded-lg bg-cyan-600 text-white dark:bg-cyan-500/20 dark:text-cyan-400 dark:border dark:border-cyan-500/30 flex items-center justify-center shadow-xs shrink-0">
-                  <ShieldLogo size={14} />
+                <div className="w-6 h-6 rounded-lg bg-indigo-600 text-white dark:bg-indigo-500/20 dark:text-indigo-400 dark:border dark:border-indigo-500/30 flex items-center justify-center shadow-xs shrink-0">
+                  <AeroPulseLogo size={14} />
                 </div>
                 <span className="font-bold text-slate-900 dark:text-white tracking-tight">
                   {BRANDING.productName}
@@ -171,30 +171,28 @@ const AppShell = memo(function AppShell() {
               </div>
               <span className="hidden sm:inline text-slate-300 dark:text-slate-700" aria-hidden="true">•</span>
               <span>
-                Powered by{' '}
-                <span className="font-semibold text-slate-700 dark:text-slate-300">
-                  BreatheWay
-                </span>{' '}
-                Community Engine
+                {BRANDING.engineBadge}
               </span>
               <span className="hidden sm:inline text-slate-300 dark:text-slate-700" aria-hidden="true">•</span>
-              <span className="font-semibold text-cyan-800 dark:text-cyan-300">WCAG 2.2 Level AA Compliant</span>
+              <span className="font-semibold text-indigo-700 dark:text-indigo-300">WCAG 2.2 Level AA Compliant</span>
               <span className="hidden sm:inline text-slate-300 dark:text-slate-700" aria-hidden="true">•</span>
               <span>EPA Breakpoints Standardized</span>
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-3 text-[11px] text-slate-600 dark:text-slate-300">
-              <span className="flex items-center gap-1.5 font-medium text-cyan-700 dark:text-cyan-400 px-2.5 py-1 rounded-full bg-cyan-50 dark:bg-cyan-950/40 border border-cyan-200/60 dark:border-cyan-800/60">
+              <span className="flex items-center gap-1.5 font-medium text-indigo-700 dark:text-indigo-300 px-2.5 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200/60 dark:border-indigo-800/60">
                 <span className="relative flex h-1.5 w-1.5" aria-hidden="true">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-cyan-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
                 </span>
-                Gemini 3.1 Neural Engine
+                Live Telemetry Active
               </span>
+              <span className="text-slate-300 dark:text-slate-700" aria-hidden="true">•</span>
+              <span>Gemini 3.1 Neural Engine</span>
               <span className="text-slate-300 dark:text-slate-700" aria-hidden="true">•</span>
               <span>Zero-Trust Security</span>
               <span className="text-slate-300 dark:text-slate-700" aria-hidden="true">•</span>
-              <span>Firebase 11 Connected</span>
+              <span>Firebase Connected</span>
             </div>
           </div>
         </footer>

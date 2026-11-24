@@ -60,11 +60,11 @@ export const CommunityHub = memo(function CommunityHub() {
       className="flex flex-col gap-8 fade-in"
     >
       {/* Top Collective Impact KPI Banner */}
-      <div className="glass-panel-elevated bg-gradient-to-br from-emerald-50/90 via-white to-slate-50 dark:from-emerald-950/40 dark:via-slate-900/90 dark:to-slate-900 border-emerald-300 dark:border-emerald-800/80 rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative overflow-hidden shadow-sm">
+      <div className="glass-panel-elevated bg-gradient-to-br from-indigo-50/70 via-white to-slate-50 dark:from-indigo-950/30 dark:via-slate-900/90 dark:to-slate-900 border-indigo-200 dark:border-indigo-800/80 rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative overflow-hidden shadow-sm">
         <div className="max-w-xl">
           <div className="flex items-center gap-2 mb-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold font-mono tracking-wide bg-emerald-100/90 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/80 shadow-2xs">
-              <UsersIcon size={13} className="text-emerald-600 dark:text-emerald-400" />
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold font-mono tracking-wide bg-indigo-100/80 dark:bg-indigo-950/70 text-indigo-800 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/80 shadow-2xs">
+              <UsersIcon size={13} className="text-indigo-600 dark:text-indigo-400" />
               COLLECTIVE NEIGHBORHOOD RESILIENCE
             </span>
           </div>

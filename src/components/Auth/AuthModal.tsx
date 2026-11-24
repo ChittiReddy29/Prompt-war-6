@@ -7,7 +7,7 @@
 
 import { useState, useCallback, type FormEvent } from 'react';
 import { Modal } from '@/components/ui/Modal';
-import { ShieldLogo, CheckCircleIcon } from '@/components/ui/Icons';
+import { AeroPulseLogo, CheckCircleIcon } from '@/components/ui/Icons';
 import { BRANDING } from '@/config/branding';
 import { firebaseAuthService } from '@/services/firebase';
 
@@ -51,11 +51,11 @@ export function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModalProps) {
   // Fast-Fill Helper for Evaluation
   const handleQuickFill = (role: 'operator' | 'citizen') => {
     if (role === 'operator') {
-      setEmail('director.chen@breatheway.org');
+      setEmail('director.chen@aeropulse.io');
       setPassword('••••••••••••');
       setFullName('Dr. Sarah Chen');
     } else {
-      setEmail('citizen.delhi@breatheway.org');
+      setEmail('citizen.delhi@aeropulse.io');
       setPassword('••••••••••••');
       setFullName('Aarav Sharma');
     }
@@ -185,8 +185,8 @@ export function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModalProps) {
       {/* Brand Header Banner */}
       <div className="flex items-center justify-between p-3.5 mb-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center text-white shadow-md shadow-emerald-500/20">
-            <ShieldLogo size={20} />
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-600 to-sky-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
+            <AeroPulseLogo size={20} />
           </div>
           <div>
             <div className="text-xs font-black text-slate-900 dark:text-white tracking-wide">

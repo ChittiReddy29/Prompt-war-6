@@ -13,7 +13,8 @@ export type BadgeVariant =
   | 'rose'
   | 'violet'
   | 'slate'
-  | 'outline';
+  | 'outline'
+  | 'indigo';
 
 export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
   variant?: BadgeVariant;
@@ -23,7 +24,7 @@ export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 }
 
 export function Badge({
-  variant = 'emerald',
+  variant = 'indigo',
   hasDot = false,
   isPulsing = false,
   className = '',
@@ -34,6 +35,11 @@ export function Badge({
     BadgeVariant,
     { classes: string; dot: string }
   > = {
+    indigo: {
+      classes:
+        'bg-indigo-50 text-indigo-800 border-indigo-200/90 dark:bg-indigo-950/60 dark:text-indigo-300 dark:border-indigo-500/30',
+      dot: 'bg-indigo-500 dark:bg-indigo-400',
+    },
     emerald: {
       classes:
         'bg-emerald-50 text-emerald-800 border-emerald-200/90 dark:bg-emerald-950/60 dark:text-emerald-300 dark:border-emerald-500/30',

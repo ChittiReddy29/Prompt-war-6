@@ -1,6 +1,6 @@
 // ============================================================
 // src/components/ui/Card.tsx
-// Precision Container & Card System (Linear/Stripe Craftsmanship)
+// AeroPulse Precision Container & Card System
 // Dual Theme (Light & Dark) Support & Clean Spatial Hierarchy
 // ============================================================
 
@@ -18,11 +18,11 @@ export function Card({
   ...props
 }: CardProps) {
   const variantStyles = {
-    default: 'glass-panel rounded-2xl p-5 sm:p-6',
-    elevated: 'glass-panel-elevated rounded-2xl p-5 sm:p-6',
-    interactive: 'glass-panel glass-panel-interactive rounded-2xl p-5 sm:p-6 cursor-pointer',
+    default: 'glass-panel rounded-2xl p-5 sm:p-6 bg-white dark:bg-[#0f172a] border border-slate-200/90 dark:border-slate-800 shadow-card',
+    elevated: 'glass-panel-elevated rounded-2xl p-5 sm:p-6 bg-white dark:bg-[#151f34] border border-slate-200 dark:border-slate-800 shadow-elevated',
+    interactive: 'glass-panel glass-panel-interactive rounded-2xl p-5 sm:p-6 bg-white dark:bg-[#0f172a] border border-slate-200/90 dark:border-slate-800 shadow-card hover:border-indigo-500/40 hover:shadow-interactive cursor-pointer transition-all',
     accent:
-      'bg-emerald-50/70 border border-emerald-200/90 dark:bg-emerald-950/20 dark:border-emerald-500/30 rounded-2xl p-5 sm:p-6 shadow-sm',
+      'bg-indigo-50/70 border border-indigo-200/90 dark:bg-indigo-950/20 dark:border-indigo-500/30 rounded-2xl p-5 sm:p-6 shadow-sm',
   };
 
   return (

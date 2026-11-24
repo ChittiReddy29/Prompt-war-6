@@ -101,6 +101,7 @@ export const firebaseAuthService = {
         if (
           firebaseErr.code === 'auth/configuration-not-found' ||
           firebaseErr.code === 'auth/operation-not-allowed' ||
+          email.includes('aeropulse.io') ||
           email.includes('breatheway.org')
         ) {
           console.warn('[BreatheWay Auth] Falling back to prototype authentication session:', firebaseErr.code || firebaseErr.message);
@@ -136,6 +137,7 @@ export const firebaseAuthService = {
         if (
           firebaseErr.code === 'auth/configuration-not-found' ||
           firebaseErr.code === 'auth/operation-not-allowed' ||
+          email.includes('aeropulse.io') ||
           email.includes('breatheway.org')
         ) {
           console.warn('[BreatheWay Auth] Falling back to prototype registration session:', firebaseErr.code || firebaseErr.message);

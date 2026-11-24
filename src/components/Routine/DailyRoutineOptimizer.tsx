@@ -86,7 +86,7 @@ export const DailyRoutineOptimizer = memo(function DailyRoutineOptimizer() {
               type="button"
               onClick={handleGenerate}
               disabled={isLoading}
-              className="w-full sm:w-auto px-6 py-3.5 rounded-2xl font-bold text-sm bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-600 hover:from-emerald-500 hover:to-teal-500 text-white shadow-md shadow-emerald-600/25 active:scale-95 transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 dark:focus:ring-offset-slate-950 flex items-center justify-center gap-2.5 border border-emerald-400/30 cursor-pointer"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-2xl font-bold text-sm bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-600/20 active:scale-95 transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-slate-950 flex items-center justify-center gap-2.5 border border-indigo-400/30 cursor-pointer"
             >
               {isLoading ? (
                 <>
@@ -124,9 +124,9 @@ export const DailyRoutineOptimizer = memo(function DailyRoutineOptimizer() {
                   type="button"
                   aria-pressed={isSelected}
                   onClick={() => setActivePersona(p)}
-                  className={`group p-5 rounded-2xl border text-left transition-all duration-200 flex flex-col justify-between gap-3.5 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-1 dark:focus:ring-offset-slate-900 relative cursor-pointer ${
+                  className={`group p-5 rounded-2xl border text-left transition-all duration-200 flex flex-col justify-between gap-3.5 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1 dark:focus:ring-offset-slate-900 relative cursor-pointer ${
                     isSelected
-                      ? 'bg-gradient-to-b from-emerald-50/90 to-white dark:from-emerald-950/40 dark:to-slate-900 border-emerald-500 dark:border-emerald-500 shadow-md ring-1 ring-emerald-500/40'
+                      ? 'bg-indigo-50/70 to-white dark:bg-indigo-950/30 dark:to-slate-900 border-indigo-500 dark:border-indigo-400 shadow-md ring-1 ring-indigo-500/30'
                       : 'bg-white/80 dark:bg-slate-900/60 border-slate-200/90 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50/80 dark:hover:bg-slate-800/40 hover:-translate-y-0.5 hover:shadow-xs'
                   }`}
                 >

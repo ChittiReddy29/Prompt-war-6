@@ -16,7 +16,7 @@ import { MobileNavDrawer } from './MobileNavDrawer';
 // Lazy-load AuthModal & Firebase to prevent render-blocking initial load
 const AuthModal = lazy(() => import('@/components/Auth/AuthModal').then(m => ({ default: m.AuthModal })));
 import {
-  ShieldLogo,
+  AeroPulseLogo,
   TelemetryIcon,
   RoutineIcon,
   TransitIcon,
@@ -189,13 +189,13 @@ export const Header = memo(function Header() {
             </button>
 
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-cyan-600 to-teal-400 text-white flex items-center justify-center shadow-xs">
-                <ShieldLogo size={18} />
+              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 to-sky-400 text-white flex items-center justify-center shadow-xs">
+                <AeroPulseLogo size={18} />
               </div>
               <span className="font-extrabold text-slate-900 dark:text-white tracking-tight">
                 {BRANDING.productName}
               </span>
-              <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[9px] font-bold bg-cyan-50 dark:bg-cyan-950/70 text-cyan-700 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-bold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800">
                 ACTIVE
               </span>
             </div>
